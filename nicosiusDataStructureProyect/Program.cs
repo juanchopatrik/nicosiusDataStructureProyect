@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Diagnostics;
@@ -12,6 +13,20 @@ namespace nicosiusDataStructureProyect
     {
         static void Main(string[] args)
         {
+        // Boxing and unboxing
+
+        ArrayList miArray = new ArrayList();
+
+            miArray.Add(5);
+            miArray.Add(6);
+
+        //this line will throw a error
+
+        /*int result = miArray[0] + miArray[1];*/
+
+        int result = (int)miArray[0] + (int)miArray[1]; 
+        Console.WriteLine("the result is {0}", result);
+
             /*            double[] calif = new double[3];
                         double sumatori = 0;
                         double difference = 0;
@@ -65,19 +80,19 @@ namespace nicosiusDataStructureProyect
                                 break;
                         }
             */
-            int cantidad = 8;
-            int sumatoria = 0;
-            int factorial = 0;
-            //Out obliga a asignar almenos 1 ves valores de la variable dentro del metodo
-            Calculador(cantidad, out sumatoria, out factorial);
-            Console.WriteLine("Sumatoria = {0}, factorial = {1}", sumatoria, factorial);
+            //int cantidad = 8;
+            //int sumatoria = 0;
+            //int factorial = 0;
+            ////Out obliga a asignar almenos 1 ves valores de la variable dentro del metodo
+            //Calculador(cantidad, out sumatoria, out factorial);
+            //Console.WriteLine("Sumatoria = {0}, factorial = {1}", sumatoria, factorial);
 
-            //Calcular promedios con diferente numero de parametros
-            double prome = 0;
-            prome = Promedio(3.5, 6.7, 8.9);
-            Console.WriteLine("The average is {0}", prome);
-            prome = Promedio(8.0,8.7,8.8,10.0,9.0);
-            Console.WriteLine("The average is {0}", prome);
+            ////Calcular promedios con diferente numero de parametros
+            //double prome = 0;
+            //prome = Promedio(3.5, 6.7, 8.9);
+            //Console.WriteLine("The average is {0}", prome);
+            //prome = Promedio(8.0,8.7,8.8,10.0,9.0);
+            //Console.WriteLine("The average is {0}", prome);
         }
 
         //se pueden usar diferente numero de parametros pero siempre la entrada sera un array
