@@ -68,9 +68,33 @@ namespace nicosiusDataStructureProyect
             int cantidad = 8;
             int sumatoria = 0;
             int factorial = 0;
-
+            //Out obliga a asignar almenos 1 ves valores de la variable dentro del metodo
             Calculador(cantidad, out sumatoria, out factorial);
             Console.WriteLine("Sumatoria = {0}, factorial = {1}", sumatoria, factorial);
+
+            //Calcular promedios con diferente numero de parametros
+            double prome = 0;
+            prome = Promedio(3.5, 6.7, 8.9);
+            Console.WriteLine("The average is {0}", prome);
+            prome = Promedio(8.0,8.7,8.8,10.0,9.0);
+            Console.WriteLine("The average is {0}", prome);
+        }
+
+        //se pueden usar diferente numero de parametros pero siempre la entrada sera un array
+        private static double Promedio(params double[] valores)
+        {
+            double suma = 0.0;
+            double prom = 0.0;
+            int n = 0;
+
+            for (int i = 0; i < valores.Length; i++)
+            {
+                suma += valores[i];
+            }
+
+            prom = suma / valores.Length;
+
+            return prom;
         }
 
         private static void Calculador(int cantidad, out int sumatoria, out int factorial)
