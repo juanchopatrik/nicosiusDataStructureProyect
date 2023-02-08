@@ -21,8 +21,11 @@ namespace nicosiusDataStructureProyect
         }
         static void Main(string[] args)
         {
-
-            ForAvanzado.Demostration();
+            //Automatic and Classic Properties
+            AutomaticClassicClass prueba = new AutomaticClassicClass();
+            prueba.ShowData();
+            
+            //ForAvanzado.Demostration();
             ////Entendiendo la clase Object
 
             //CPersona juan = new CPersona("Juan", 27);

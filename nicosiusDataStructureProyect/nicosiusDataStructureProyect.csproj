@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutomaticClassicClass.cs" />
     <Compile Include="CPersona.cs" />
     <Compile Include="ForAvanzado.cs" />
     <Compile Include="Program.cs" />
