@@ -31,6 +31,7 @@ namespace nicosiusDataStructureProyect
             if (obj != null && obj is CPersona)
             {
                 CPersona tem = (CPersona)obj;
+                
                 if (nombre == tem.nombre && edad == tem.edad)
                     return true;
             }
