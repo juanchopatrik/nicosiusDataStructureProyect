@@ -21,10 +21,16 @@ namespace nicosiusDataStructureProyect
         }
         static void Main(string[] args)
         {
-            //Automatic and Classic Properties
-            AutomaticClassicClass prueba = new AutomaticClassicClass();
-            prueba.ShowData();
+            //Operators Null (?)
+
+            NulleableOperators.DemoNulleable();
+            NulleableOperators.DemoNulleable2();
             
+
+            //Automatic and Classic Properties
+/*            AutomaticClassicClass prueba = new AutomaticClassicClass();
+            prueba.ShowData();
+*/
             //ForAvanzado.Demostration();
             ////Entendiendo la clase Object
 
@@ -254,6 +260,6 @@ namespace nicosiusDataStructureProyect
         //        factorial = factorial * m;
         //    }
         //}
-     
+
     }
 }

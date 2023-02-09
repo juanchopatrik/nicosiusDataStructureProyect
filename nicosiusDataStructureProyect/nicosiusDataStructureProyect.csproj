@@ -46,6 +46,7 @@
     <Compile Include="AutomaticClassicClass.cs" />
     <Compile Include="CPersona.cs" />
     <Compile Include="ForAvanzado.cs" />
+    <Compile Include="NulleableOperators.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
