@@ -21,10 +21,13 @@ namespace nicosiusDataStructureProyect
         }
         static void Main(string[] args)
         {
+            //Enumerators Flags
+            EnumerationsFlags.probando();
+
             //Operators Null (?)
 
-            NulleableOperators.DemoNulleable();
-            NulleableOperators.DemoNulleable2();
+            //NulleableOperators.DemoNulleable();
+            //NulleableOperators.DemoNulleable2();
             
 
             //Automatic and Classic Properties
